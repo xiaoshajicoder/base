@@ -8,8 +8,9 @@ const User = () => import('../components/User.vue')
 
 const routes = [
     {
-        path: '/home',
-        component: Home
+        path: '/home/:id',
+        component: Home,
+        name: 'home'
     },
     {
         path: '/user',
